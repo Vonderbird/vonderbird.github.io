@@ -1,0 +1,23 @@
+
+.btn {
+    font-family: 'Rambla', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+    border-style: solid;
+    color: #fff;
+    border-width: 0;
+    -webkit-transition: background-color .15s ease-out;
+    transition: background-color .15s ease-out;
+    background-color: #101010;
+    margin-top: 10px;
+    border-radius: 0;
+    margin-right: 10px;
+    margin-left: 430px;
+    float: left;
+
+}
+.btn:hover{
+    color: rgb(245, 68, 68);
+   
+}
