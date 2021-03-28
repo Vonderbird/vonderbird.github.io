@@ -232,11 +232,11 @@ input[type="checkbox"] {
 /* Scrollbar  */
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: rgb(206, 205, 205);
 }
 
 ::-webkit-scrollbar-thumb {

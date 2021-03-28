@@ -123,7 +123,7 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   top: 50%;
   z-index: 10;
-  overflow: scroll;
+  overflow: hidden;
   opacity: 0;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
@@ -181,7 +181,7 @@ html[xmlns] .flexslider .slides {
   left: 10px;
   opacity: 0.8;
   z-index: 10;
-  overflow: scroll;
+  overflow: hidden;
   cursor: pointer;
   color: #101010;
 }
@@ -237,7 +237,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
-  overflow: scroll;
+  overflow: hidden;
 }
 .flex-control-thumbs li {
   width: 25%;
