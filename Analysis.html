@@ -68,13 +68,732 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                            <p>One of the main things as a game designer is to analyze other games, try to break the game to its core mechanics, extract data from them, and learn from the game's flaws and strong suits.</p>
-                            <p>Analyzing games is one of the main things I do as a designer, and a recent example is my analysis of Paeezan studio's game called Mofioso. Mofioso is an online turn-based video game with multiple heroes and abilities. Maintining the balance between heroes is one of the main deals in such games.</p>
-                            <p>After final agreements with Paeezan Studio, My friend and I decided to work on the project of analyzing and reverse engineering their online game, and compare our analysis with actual data provided by the studio.<br>
-                                The project took over a month, and by analyzing the game, we broke the game into its core mechanics and plotted character status, upgrade system, etc. Then we compared our predicted data with actual data and suggested some changes in charatcers' abilities to balance the game even further and sent our final results to the studio's data scientist.</p>
-                            <p>You can download and read the analysis from the link below:</p>
-                            <p><a href="Mafioso Analysis.pdf" class="btn">DOWNLOAD MAFIOSO ANALYSIS</a></p>
+
+                        <html>
+
+                            <head>
+                            <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+                            <meta name=Generator content="Microsoft Word 15 (filtered)">
+                            <style>
+                            <!--
+                             /* Font Definitions */
+                             @font-face
+                                {font-family:"Cambria Math";
+                                panose-1:2 4 5 3 5 4 6 3 2 4;}
+                            @font-face
+                                {font-family:Calibri;
+                                panose-1:2 15 5 2 2 2 4 3 2 4;}
+                            @font-face
+                                {font-family:"Anitlles Laser Italic";
+                                panose-1:0 0 0 0 0 0 0 0 0 0;}
+                            @font-face
+                                {font-family:"1980 Portable";
+                                panose-1:0 0 4 0 0 0 0 0 0 0;}
+                            @font-face
+                                {font-family:"Aunchanted Bold";
+                                panose-1:2 0 5 6 2 0 0 2 0 3;}
+                            @font-face
+                                {font-family:"Alpha Echo";
+                                panose-1:2 0 0 0 0 0 0 0 0 0;}
+                            @font-face
+                                {font-family:A770-Deco;
+                                panose-1:0 0 4 0 0 0 0 0 0 0;}
+                            @font-face
+                                {font-family:"\#44 Font";
+                                panose-1:0 0 0 0 0 0 0 0 0 0;}
+                             /* Style Definitions */
+                             p.MsoNormal, li.MsoNormal, div.MsoNormal
+                                {margin-top:0in;
+                                margin-right:0in;
+                                margin-bottom:8.0pt;
+                                margin-left:0in;
+                                line-height:107%;
+                                font-size:11.0pt;
+                                font-family:"Calibri",sans-serif;}
+                            p.MsoCaption, li.MsoCaption, div.MsoCaption
+                                {margin-top:0in;
+                                margin-right:0in;
+                                margin-bottom:10.0pt;
+                                margin-left:0in;
+                                font-size:9.0pt;
+                                font-family:"Calibri",sans-serif;
+                                color:#44546A;
+                                font-style:italic;}
+                            p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+                                {margin-top:0in;
+                                margin-right:0in;
+                                margin-bottom:8.0pt;
+                                margin-left:.5in;
+                                line-height:107%;
+                                font-size:11.0pt;
+                                font-family:"Calibri",sans-serif;}
+                            p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+                                {margin-top:0in;
+                                margin-right:0in;
+                                margin-bottom:0in;
+                                margin-left:.5in;
+                                line-height:107%;
+                                font-size:11.0pt;
+                                font-family:"Calibri",sans-serif;}
+                            p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+                                {margin-top:0in;
+                                margin-right:0in;
+                                margin-bottom:0in;
+                                margin-left:.5in;
+                                line-height:107%;
+                                font-size:11.0pt;
+                                font-family:"Calibri",sans-serif;}
+                            p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+                                {margin-top:0in;
+                                margin-right:0in;
+                                margin-bottom:8.0pt;
+                                margin-left:.5in;
+                                line-height:107%;
+                                font-size:11.0pt;
+                                font-family:"Calibri",sans-serif;}
+                            .MsoChpDefault
+                                {font-family:"Calibri",sans-serif;}
+                            .MsoPapDefault
+                                {margin-bottom:8.0pt;
+                                line-height:107%;}
+                             /* Page Definitions */
+                             @page WordSection1
+                                {size:8.5in 11.0in;
+                                margin:1.0in 1.0in 1.0in 1.0in;
+                                border:windowtext 12.0pt;
+                                padding:24.0pt 24.0pt 24.0pt 24.0pt;}
+                            div.WordSection1
+                                {page:WordSection1;}
+                             /* List Definitions */
+                             ol
+                                {margin-bottom:0in;}
+                            ul
+                                {margin-bottom:0in;}
+                            -->
+                            </style>
+                            
+                            </head>
+                            
+                            <body lang=EN-US style='word-wrap:break-word'>
+                            
+                            <div class=WordSection1>
+                            
+                            <p class=MsoNormal><span style='font-size:26.0pt;line-height:107%;font-family:
+                            "Alpha Echo"'>Introduction:</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Mafioso is an online turn-based Mobile game in which
+                            players battle in 1v1 PVP matches. It is a hero-based game, and players have to
+                            choose three heroes for each battle. Each hero has three unique cards with
+                            different effects. 2 Ability cards and one special card. There is a mana bar
+                            that increases each turn and has a maximum value of 10. Each card consumes a
+                            constant amount of mana, and the player's turn ends when they don't have enough
+                            mana to use any of their cards. However, for special cards, other than mana,
+                            players need to have a full rage bar to be able to use them. Using Special
+                            Ability completely empties the rage bar. Rage bar increases each turn, and its
+                            refill speed depends on the heroes. Each hero has a specific rage refill ratio.
+                            Usually, heroes with lower health bar have a higher rage refill ratio.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>In this analysis, we are going to analyze various features
+                            of this game and find out whether the game is well balanced or not.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>We contacted the game developers, signed an NDA, and were
+                            provided with all the information we needed.</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=350 id="Picture 1" src="Mafioso_files/image001.jpg"></span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:26.0pt;line-height:107%;font-family:
+                            "Alpha Echo"'>Ability Cards Analysis:</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>First, we analyzed the ability cards and their effects.<br>
+                            Different heroes have different ability cards, so it is not reasonable to
+                            expect the overall damage ratio of all the cards to be in the same range.
+                            Overall, the so-called Tank heroes deal less damage.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>What we did was comparing each card's damage with the mana
+                            it consumes and see if the consumed mana required for each card is fair.<br>
+                            For this, we calculated the expected damage ratio for each card, which is
+                            (Damage/Mana), and compared it with the real Damage Ratio.<br>
+                            We didn't consider Special Ability cards here as they are unique and have many
+                            effects other than dealing damage.<br>
+                            Moreover, healing an ally or yourself is considered as the same type as dealing
+                            damage to the enemy. </span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>The results can be seen in figure 1.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As expected, for most of the ability cards, the expected
+                            damage ratio and real damage ratio are the same, but there are some exceptions.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Now, we want to analyze each of these cards, to see if they
+                            are not well balanced or have some other effects that were not considered in
+                            the expected damage ratio.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=664 id="Picture 2" src="Mafioso_files/image002.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 1:
+                            Expected Damage Ratio and Real Damage Ratio</p>
+                            
+                            <span style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><br
+                            clear=all style='page-break-before:always'>
+                            </span>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+                            style='font-size:20.0pt;line-height:107%;font-family:A770-Deco;color:#2E74B5'>A)<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=LTR></span><span
+                            style='font-size:20.0pt;line-height:107%;font-family:A770-Deco;color:#2E74B5'>Exceptional
+                            Cards:<br>
+                            <br>
+                            </span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>1.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Hoodlum Hank Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Adds
+                            1 mana and orders other allies to attack.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>2.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Doctor Wesley Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>
+                            Multiplies other heroes' damage by 1.2 and lasts for 2 turns.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>3.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Tyler Knockout Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>
+                            Increases special ability's damage.</span></p>
+                            
+                            <p class=MsoNormal style='margin-left:.25in'><span style='font-size:14.0pt;
+                            line-height:107%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+                            style='font-size:20.0pt;line-height:107%;font-family:A770-Deco;color:#2E74B5'>B)<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=LTR></span><span
+                            style='font-size:20.0pt;line-height:107%;font-family:A770-Deco;color:#2E74B5'>Expected
+                            Ratio more than Real Ratio:<br>
+                            <br>
+                            </span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>1.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Takaya Tatsu Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Adds
+                            120 health to an ally by reducing 40 health from herself.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>2.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Tricky Dandy Ab 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>
+                            Reduces 30 health from an ally and adds 60 to himself.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>3.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>The Zombie Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Deals
+                            100 damage to enemy and 70 to himself.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>4.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Roberto Matto: Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>
+                            Multiplies damage by 1.2 if used a second time on the same enemy.<br>
+                            This card seems to be a bit unfair compared to other cards from the same class
+                            of heroes according to the mana it consumes.</span></p>
+                            
+                            <p class=MsoNormal style='margin-left:.25in'><span style='font-size:14.0pt;
+                            line-height:107%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+                            style='font-size:20.0pt;line-height:107%;font-family:A770-Deco;color:#2E74B5'>C)<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=LTR></span><span
+                            style='font-size:20.0pt;line-height:107%;font-family:A770-Deco;color:#2E74B5'>Real
+                            Ratio more than Expected Ratio:<br>
+                            <br>
+                            </span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>1.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Vera Vendetta Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Deals
+                            more damage to the enemy that hit her in the previous turn.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>2.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Jimmy Razor Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Deals
+                            more damage to enemies with lower health.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>3.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Takaya Tatsu Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> <a
+                            name="_Hlk31305032">Deals more damage if used on the same enemy in the next
+                            turn</a>.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>4.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Doctor Wesley Ab.1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Heals
+                            an ally.<br>
+                            This card seems to be a bit over-powered compared to the mana it uses.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>5.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Ronaldo Blast Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Seems
+                            to be over-powered.<br>
+                            One reason for this can be because this hero is one of the last heroes that are
+                            unlocked.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>6.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Stefano Solo Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Deals
+                            damage to multiple enemies.<br>
+                            This hero has low health, so a higher damage ratio for the same mana compared
+                            to other heroes is legitimate.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>7.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Jimmy Razor Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> Deals
+                            more damage if used on the same enemy in the next turn.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>8.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Nurse Lizzie Ab. 2:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> The damage
+                            effect lasts for 2 turns. Deals 0.83 of the initial damage, in the second turn.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>9.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Debi Deadshot Ab. 1:</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> If an
+                            enemy who is marked by this hero attacks in the next turn, Debi shoots her out
+                            of turn.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As seen above, although a few cards need some changes to be
+                            balanced, overall cards that deal more damage than expected according to the
+                            mana it consumes belongs to heroes with lower health and cards that deal less
+                            damage than expected belong to Tank heroes. This keeps the overall experience
+                            balanced.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:26.0pt;line-height:107%;font-family:
+                            "Alpha Echo"'>Hero Analysis:</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Second, in our game analysis, we decided to analyze heroes
+                            and their stats.<br>
+                            As this game has so many special abilities and various features for heroes,
+                            finding a strict measurement method for the hero's overall power is a
+                            sophisticated subject. But we have tried to consider every possible aspect that
+                            differentiates heroes and makes one stronger than the other.<br>
+                            What we expect is all heroes to be in the same power level and have the same
+                            overall hero score, but defiantly this is not going to be the case.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Our measurement elements were hero's cards overall damage
+                            summation, hero's health, and hero's rage bar filler multiplier.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>We normalized these effects and calculated a number between
+                            0 and 1 for each hero. We have also weighted Health, Damage, and rage
+                            differently for more accurate results. Health had the most weight as it is the
+                            most important factor. Damage was second, and rage was third.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Figure 2 shows the achieved results:</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=229 id="Picture 5" src="Mafioso_files/image003.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 2:
+                            Overall hero score</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As the chart shows, heroes are usually in the same range,
+                            and the chart has a low variance. Usually, heroes that are unlocked later in
+                            the game have a slighter higher overall score. But there are a few exceptions.<br>
+                            Some heroes, unlike the others, are not easy to use and do not deal straight
+                            forward damage and need more practice to master.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>For example:</span></p>
+                            
+                            <p class=MsoNormal><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Hoodlum Hank</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> is a
+                            special hero and as said before, has an ability card that does not deal damage
+                            but increases special ability card's damage.</span></p>
+                            
+                            <p class=MsoNormal><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Fiona</span></u></i></b><span style='font-size:
+                            14.0pt;line-height:107%;font-family:"Arial",sans-serif'> deals more damage to
+                            female heroes but stuns male heroes.</span></p>
+                            
+                            <p class=MsoNormal><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Bobby Kaboom</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> has a
+                            very high damage ratio but cannot damage a single hero and deals damage to all
+                            heroes at once.</span></p>
+                            
+                            <p class=MsoNormal><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Ronaldo Blast</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> His
+                            cards have a very high damage ratio but might not explode sometimes, which will
+                            result in 0 damage dealt to the enemy.</span></p>
+                            
+                            <p class=MsoNormal><b><i><u><span style='font-size:14.0pt;line-height:107%;
+                            font-family:"Arial",sans-serif'>Fat Frank</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> deals
+                            more damage if used on the same enemy in the next turn</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "\#44 Font";color:red'>Note:</span><span style='font-size:14.0pt;line-height:
+                            107%;font-family:"Arial",sans-serif;color:red'> </span><b><i><u><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Pin Head</span></u></i></b><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'> has
+                            not been yet released, and this hero might be buffed after a while.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>With this told, we will now compare our score with real
+                            data that we got from the developers.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Figures below indicate Win Rate, Pick Rate, and Ban Rate
+                            for all heroes in all arenas:</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=350 id="Picture 10" src="Mafioso_files/image004.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 3:
+                            Win Rate</p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><img
+                            width=624 height=318 id="Picture 11" src="Mafioso_files/image005.jpg"></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 4:
+                            Pick Rate</p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><img
+                            width=624 height=266 id="Picture 12" src="Mafioso_files/image006.jpg"></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 5:
+                            Ban Rate</p>
+                            
+                            <p class=MsoNormal>&nbsp;</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As figure 3 shows, hero score is a good measurement for the
+                            overall superiority of a hero over another but there are few exceptions.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As an example, <b><i><u>Anis Qajar</u></i></b> is a special
+                            hero that does not have a very high damage ratio but can prevent enemies from
+                            attacking her. Moreover, her special ability increases her ability cards'
+                            damage too.<br>
+                            This hero is very powerful and needs to be nerfed.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Pick rate is not a very good measurement because the arena
+                            highly influences it.<br>
+                            All heroes are not unlocked from the beginning of the game. They are unlocked
+                            as you proceed to higher arenas. Thus, heroes from the first arenas are picked
+                            way more often than the others.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Here is the list of heroes based on their arenas:</span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center;page-break-after:
+                            avoid'>Table 1: Heroes and their unlocking Arenas</p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=482 height=757 id="Picture 3" src="Mafioso_files/image007.jpg"></span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>The unlocking arena has a huge direct effect on pick rate.
+                            Initial heroes are selected way more often than the others.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Ban Rate is also not a very accurate measurement because
+                            players usually ban most annoying heroes, which might not exactly mean the most
+                            powerful heroes, though in some cases, overpowered heroes can be annoying.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As an example, <b><i><u>Sahara</u></i></b> can disappear
+                            and technically become invincible. She also can detonate her bombs all at once
+                            whenever she wants, which is really on other players' nerves.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>For a more accurate result, we decided to calculate a
+                            weighted average of Win Rate and Pick Rate.<br>
+                            Here are the results:</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=266 id="Picture 13" src="Mafioso_files/image008.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 6:
+                            Weighted Average of win rate and pick rate</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>The unlocking arena of the heroes still influences this
+                            table, but aside from that, the calculated score for heroes is an accurate
+                            measurement for a hero's superiority over another.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal>&nbsp;</p>
+                            
+                            <p class=MsoNormal><span style='font-size:26.0pt;line-height:107%;font-family:
+                            "Alpha Echo"'>Upgrade Analysis:</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Both heroes and ability cards can be upgraded in this game.
+                            They require gold and card parts to be upgraded. Ability Cards can be upgraded
+                            up to 15 levels, Special cards up to 10 levels and heroes can be upgraded up to
+                            6 levels.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>First, we want to analyze how much the upgrade increases
+                            the stats, and then we will analyze the requirements.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>The figure below shows </span><span style='font-size:14.0pt;
+                            line-height:107%;font-family:"Arial",sans-serif'>Heroes' health increase after
+                            each level:</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=442 id="Picture 4" src="Mafioso_files/image009.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 7:
+                            Heroes' Health increase</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>With each level up, Heroes' health multiply by 1.146383792.<br>
+                            Considering this, Heroes' health on level 6 is going to be approximately twice
+                            their health on level 1.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Stats increase for ability cards, and special cards also
+                            grow the same way as health.<br>
+                            Ability card 1 and 2's damage is multiplied by 1.05, and the special ability
+                            card's damage is multiplied by 1.07885016390642 with each level up.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>However, the costs are a completely different story.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>For each level up, as said before, you need some cards and
+                            some Gold, and you will also earn some XP, which will level you up.<br>
+                            Figure 4 shows the requirements for level up and XP gained with heroes' level
+                            up:</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=624 height=318 id="Picture 6" src="Mafioso_files/image010.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 8:
+                            Hero Upgrade Details</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Before going into details, here are the requirements and XP
+                            gain with Cards' level up:</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=624 height=287 id="Picture 7" src="Mafioso_files/image011.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 9:
+                            Ability 1 Upgrade Details</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=341 id="Picture 8" src="Mafioso_files/image012.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 10:
+                            Ability 2 Upgrade Details</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><img
+                            width=623 height=308 id="Picture 9" src="Mafioso_files/image013.jpg"></span></p>
+                            
+                            <p class=MsoCaption align=center style='text-align:center'>Figure 11:
+                            Special Ability Upgrade Details</p>
+                            
+                            <p class=MsoNormal>&nbsp;</p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>As can be seen, upgrades' requirements and XP's growth are exponential.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Hero upgrade is a crucial part of level up, so as seen in
+                            figure 4, XP grows significantly faster than cards, and players receive more XP
+                            by leveling up their heroes than leveling up their cards.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Required Gold skyrockets after level 11 for Ability cards.
+                            This is due to some factors that we will open below:</span></p>
+                            
+                            <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>1.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><span style='font-size:18.0pt;line-height:107%;font-family:A770-Deco;
+                            color:#0070C0'>Balance between skill and upgrades:</span><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'><br>
+                            Mafioso is a skill-based game. Players have to learn to play with their heroes
+                            before upgrading them and as an online multiplayer, required skill to play in
+                            higher ranks in better arenas grow exponentially. That is why required Gold and
+                            Cards grow exponentially. This helps players have to practice more with their
+                            heroes before upgrading them.</span></p>
+                            
+                            <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+                            style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>2.<span
+                            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+                            dir=LTR></span><span style='font-size:18.0pt;line-height:107%;font-family:A770-Deco;
+                            color:#0070C0'>Whales, Dolphins and Minnows:</span><span style='font-size:14.0pt;
+                            line-height:107%;font-family:"Arial",sans-serif'><br>
+                            These are the beating heart of an F2P game.<br>
+                            Players who spend big money, players who rely on their skills but spend when
+                            needed and players who do not spend at all.<br>
+                            To balance these players, encourage whales and yet, make minnows spend a much
+                            higher time in the game, Upgrade requirements' cost rise exponentially.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>&nbsp;</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:26.0pt;line-height:107%;font-family:
+                            "Alpha Echo"'>Conclusion:</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>Overall, Mafioso is a well-balanced game with complex
+                            special features for each hero, which makes evaluating them more sophisticated
+                            and harder. We tried to consider as many factors as possible in our
+                            calculations and get to the best possible results.<br>
+                            This analysis is in 3 parts and analyzes Ability cards, Heroes, and upgrades.
+                            Ability cards are measured based on dealt damage. Heroes are compared based on
+                            their health, damage, and rage, and upgrades are analyzed by comparing their
+                            cost and the overall stats they increase.<br>
+                            After that on each part we tried to find the reasons behind each chart and
+                            analyze our results to find if there is a reason behind abnormalities of the
+                            charts or the game has flaws.<br>
+                            We found out that the game is a solid experience and players with any taste and
+                            desire can enjoy the game despite the few flaws of the game and upgrade prices
+                            that might seem unreasonable at first look.</span></p>
+                            
+                            <p class=MsoNormal><span style='font-size:14.0pt;line-height:107%;font-family:
+                            "Arial",sans-serif'>We can take this analysis a step further by analyzing the
+                            math making system and daily reward system to see whether the matchmaking is
+                            balanced or not and to see how long it will take to purchase an upgrade for
+                            each item.</span></p>
+                            
+                            <p class=MsoNormal>&nbsp;</p>
+                            
+                            <p class=MsoNormal>&nbsp;</p>
+                            
+                            <p class=MsoNormal>&nbsp;</p>
+                            
+                            </div>
+                            
+                            </body>
+                            
+                            </html>
+                            
+
                        
 
                         </div>
